@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form validation with js</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <section class="d-flex">
+    <div class="m-auto">
+      <form class="row" id="myforms" onsubmit="return validateForm()" novalidate>
+        <div id="form_area">
+
+        </div>
+        <div class="col-12 mt-3">
+          <label class="form-label" for="gender">Gender</label>
+          <select class="form-select" name="gender" id="gender">
+            <option selected disabled value="">choose a value....</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="taadiya aale">taadiya waale</option>
+            <span class="invalid-form" id="gender_error_msg"></span>
+          </select>
+        </div>
+        <div class="col-12 mt-3">
+          <button id="submit_btn" class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/arrays-list.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
